@@ -1,1 +1,1 @@
-ls *.ipynb | while read f; do cat $f | jq 'del(.cells[].metadata.execution)' > $f.TEMP && mv $f.TEMP $f; done
+cat $1 | jq 'del(.cells[].metadata.execution)' > $1.TEMP && mv $1.TEMP $1
