@@ -1,0 +1,1 @@
+ls -d ch0? | while read x; do (cd $x && jupyter nbconvert --clear-output *.ipynb && jupyter nbconvert *.ipynb --to python --no-prompt); done
