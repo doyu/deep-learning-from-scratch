@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding: utf-8
+
 # coding: utf-8
 import sys, os
 sys.path.append(os.pardir)  # 親ディレクトリのファイルをインポートするための設定
@@ -40,3 +43,4 @@ plt.ylabel("accuracy")
 plt.ylim(0, 1.0)
 plt.legend(loc='lower right')
 plt.show()
+

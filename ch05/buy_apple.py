@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding: utf-8
+
 # coding: utf-8
 from layer_naive import *
 
@@ -22,3 +25,4 @@ print("price:", int(price))
 print("dApple:", dapple)
 print("dApple_num:", int(dapple_num))
 print("dTax:", dtax)
+

@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding: utf-8
+
 # coding: utf-8
 import numpy as np
 import matplotlib.pylab as plt
@@ -11,3 +14,4 @@ y = relu(x)
 plt.plot(x, y)
 plt.ylim(-1.0, 5.5)
 plt.show()
+

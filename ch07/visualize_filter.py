@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding: utf-8
+
 # coding: utf-8
 import numpy as np
 import matplotlib.pyplot as plt
@@ -26,3 +29,4 @@ filter_show(network.params['W1'])
 # 学習後の重み
 network.load_params("params.pkl")
 filter_show(network.params['W1'])
+

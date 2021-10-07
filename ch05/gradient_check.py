@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding: utf-8
+
 # coding: utf-8
 import sys, os
 sys.path.append(os.pardir)  # 親ディレクトリのファイルをインポートするための設定
@@ -19,3 +22,4 @@ grad_backprop = network.gradient(x_batch, t_batch)
 for key in grad_numerical.keys():
     diff = np.average( np.abs(grad_backprop[key] - grad_numerical[key]) )
     print(key + ":" + str(diff))
+

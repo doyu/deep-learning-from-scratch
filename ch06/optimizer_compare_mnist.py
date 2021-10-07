@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding: utf-8
+
 # coding: utf-8
 import os
 import sys
@@ -64,3 +67,4 @@ plt.ylabel("loss")
 plt.ylim(0, 1)
 plt.legend()
 plt.show()
+

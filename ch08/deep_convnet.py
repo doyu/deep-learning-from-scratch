@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding: utf-8
+
 # coding: utf-8
 import sys, os
 sys.path.append(os.pardir)  # 親ディレクトリのファイルをインポートするための設定
@@ -134,3 +137,4 @@ class DeepConvNet:
         for i, layer_idx in enumerate((0, 2, 5, 7, 10, 12, 15, 18)):
             self.layers[layer_idx].W = self.params['W' + str(i+1)]
             self.layers[layer_idx].b = self.params['b' + str(i+1)]
+

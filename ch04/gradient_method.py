@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding: utf-8
+
 # coding: utf-8
 import numpy as np
 import matplotlib.pylab as plt
@@ -35,3 +38,4 @@ plt.ylim(-4.5, 4.5)
 plt.xlabel("X0")
 plt.ylabel("X1")
 plt.show()
+

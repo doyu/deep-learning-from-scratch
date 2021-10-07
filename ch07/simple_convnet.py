@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding: utf-8
+
 # coding: utf-8
 import sys, os
 sys.path.append(os.pardir)  # 親ディレクトリのファイルをインポートするための設定
@@ -36,14 +39,11 @@ class SimpleConvNet:
 
         # 重みの初期化
         self.params = {}
-        self.params['W1'] = weight_init_std * \
-                            np.random.randn(filter_num, input_dim[0], filter_size, filter_size)
+        self.params['W1'] = weight_init_std *                             np.random.randn(filter_num, input_dim[0], filter_size, filter_size)
         self.params['b1'] = np.zeros(filter_num)
-        self.params['W2'] = weight_init_std * \
-                            np.random.randn(pool_output_size, hidden_size)
+        self.params['W2'] = weight_init_std *                             np.random.randn(pool_output_size, hidden_size)
         self.params['b2'] = np.zeros(hidden_size)
-        self.params['W3'] = weight_init_std * \
-                            np.random.randn(hidden_size, output_size)
+        self.params['W3'] = weight_init_std *                             np.random.randn(hidden_size, output_size)
         self.params['b3'] = np.zeros(output_size)
 
         # レイヤの生成
@@ -158,3 +158,4 @@ class SimpleConvNet:
         for i, key in enumerate(['Conv1', 'Affine1', 'Affine2']):
             self.layers[key].W = self.params['W' + str(i+1)]
             self.layers[key].b = self.params['b' + str(i+1)]
+

@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding: utf-8
+
 # coding: utf-8
 import sys, os
 sys.path.append(os.pardir)  # 親ディレクトリのファイルをインポートするための設定
@@ -19,3 +22,4 @@ trainer.train()
 # パラメータの保存
 network.save_params("deep_convnet_params.pkl")
 print("Saved Network Parameters!")
+

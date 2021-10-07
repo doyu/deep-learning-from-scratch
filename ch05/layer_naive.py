@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding: utf-8
+
 # coding: utf-8
 
 
@@ -34,3 +37,4 @@ class AddLayer:
         dy = dout * 1
 
         return dx, dy
+

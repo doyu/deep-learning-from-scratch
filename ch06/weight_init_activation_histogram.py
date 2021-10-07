@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding: utf-8
+
 # coding: utf-8
 import numpy as np
 import matplotlib.pyplot as plt
@@ -51,3 +54,4 @@ for i, a in activations.items():
     # plt.ylim(0, 7000)
     plt.hist(a.flatten(), 30, range=(0,1))
 plt.show()
+

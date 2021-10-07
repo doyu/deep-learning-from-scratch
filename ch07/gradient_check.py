@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding: utf-8
+
 # coding: utf-8
 import numpy as np
 from simple_convnet import SimpleConvNet
@@ -14,3 +17,4 @@ grad = network.gradient(X, T)
 
 for key, val in grad_num.items():
     print(key, np.abs(grad_num[key] - grad[key]).mean())
+

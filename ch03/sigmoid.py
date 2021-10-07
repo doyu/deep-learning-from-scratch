@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# coding: utf-8
+
 # coding: utf-8
 import numpy as np
 import matplotlib.pylab as plt
@@ -11,3 +14,4 @@ Y = sigmoid(X)
 plt.plot(X, Y)
 plt.ylim(-0.1, 1.1)
 plt.show()
+
